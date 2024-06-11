@@ -39,8 +39,8 @@ span {
   background: #ffffff;
   border-radius: 30px;
 
-  .item,
-  .item-start {
+  .save,
+  .start {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -109,6 +109,14 @@ span {
     margin-top: 1.25rem;
   }
 
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    &-login{}
+  }
+
   .input {
     display: flex;
     flex-direction: column;
@@ -139,6 +147,18 @@ span {
         background: #f5f5f5;
         outline: none;
         animation: bounceX 0.3s ease 0s forwards;
+      }
+    }
+
+    .otp {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      
+      input {
+        width: 30px;
+        text-align: center;
       }
     }
   }
